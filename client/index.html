@@ -4,6 +4,7 @@
         <meta charset="UTF-8">
         <title>Hafen</title>
         <link href="favicon.ico" rel="icon" type="image/x-icon" />
+        <link href="https://fonts.googleapis.com/css?family=Berkshire+Swash|Raleway" rel="stylesheet">
     </head>
     <body>
 
@@ -11,6 +12,7 @@
     *{
         margin:0;
         padding:0;
+        font-family: 'Raleway', sans-serif;
     }
     #header{
         position: absolute;
@@ -18,28 +20,43 @@
         width: 100%;
 
         background-color: #333;
-
+    }
+    #header p{
+        margin-top: 25px;
+        line-height: 50px;
+        text-align: center;
+        font-family: 'Berkshire Swash', cursive;
+        font-size: 3em;
+        color: #DBF8DE;
+    }
+    #game, #map{
+        position: absolute;
+        top: 100px;
     }
     </style>
 
-    <div id='header'>Hafen</div>
+    <div id='header'><p>Hafen<p></div>
     <div id='title'>
         <canvas id='map'></canvas>
         <canvas id='game'></canvas>
-        <div id='dialogueBox'></div>
+        <div id='dialogueContainer'></div>
     </div>
 
     <script src='/victor.js'></script>
 
     <script src="world.js"></script>
     <script src="camera.js"></script>
+    <script src="map.js"></script>
     <script src="player.js"></script>
     <script src ="character.js"></script>
     <script src="dialogue.js"></script>
     <script src="game.js"></script>
     <script>
+        let gameCanvas = document.querySelector('#game');
+        let mapCanvas = document.querySelector('#map');
+        let dialogueContainer = document.querySelector('#dialogueContainer');
 
-        let game = new Game();
+        let game = new Game(gameCanvas, mapCanvas);
 
         game.start();
 

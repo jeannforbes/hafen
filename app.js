@@ -13,9 +13,12 @@ app.get('/favicon.ico', (req, res) => { res.sendFile('favicon.ico', { root: './c
 app.get('/game.js', (req, res) => { res.sendFile('game.js', { root: './client/js' }); });
 app.get('/world.js', (req, res) => { res.sendFile('world.js', { root: './client/js' }); });
 app.get('/camera.js', (req, res) => { res.sendFile('camera.js', { root: './client/js' }); });
+app.get('/map.js', (req, res) => { res.sendFile('map.js', { root: './client/js' }); });
 app.get('/player.js', (req, res) => { res.sendFile('player.js', { root: './client/js' }); });
 app.get('/dialogue.js', (req, res) => { res.sendFile('dialogue.js', { root: './client/js' }); });
 app.get('/character.js', (req, res) => { res.sendFile('character.js', { root: './client/js' }); });
+
+app.get('/default.world', (req, res) => { res.sendFile('default.world', { root: './client/json' }); });
 
 app.get('/victor.js', function(req, res){ res.sendFile('victor.min.js', { root: './client/lib/victor-1.1.0/build' }); });
 
