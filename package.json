@@ -1,0 +1,23 @@
+{
+  "name": "hafen",
+  "version": "1.0.0",
+  "description": "weekend jrpg",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "test": "nodemon app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jeannforbes/hafen.git"
+  },
+  "author": "J, Ian",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jeannforbes/hafen/issues"
+  },
+  "homepage": "https://github.com/jeannforbes/hafen#readme",
+  "devDependencies": {
+    "nodemon": "^1.12.1"
+  }
+}
