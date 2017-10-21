@@ -1,0 +1,13 @@
+w: wall
+r: water/river
+f: tree/forest
+-: blank tile, can walk through
+c: chest
+b: bridge
+m: mountain
+G: guard
+p: party starts here
+B: boss
+k: barkeep
+s: stairs
+g: garden/grass (can walk through)
